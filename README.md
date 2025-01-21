@@ -1,18 +1,19 @@
 # DIO-cibersecurity-desafio-phishing
 ## Desafio do Bootcamp Santander Cybersecurity sobre PHISHING
 
-No desafio de projeto proposto pelo porfessor Cassiano da DIO, foi proposto o desenvolvimento de um PHISHING onde deveriamos clonar o acesso de uma rede social e obter as credenciais do usuario.
+No desafio de projeto proposto pelo professor Cassiano, da DIO, foi solicitado o desenvolvimento de um phishing, onde deveríamos clonar a página de login de uma rede social e capturar as credenciais do usuário.
 
-Esse procedimento deveria ser realizado atraves do SO Kali Linux, usando a ferramenta do SETOOLKIT.
+Esse procedimento deveria ser realizado utilizando o sistema operacional Kali Linux e a ferramenta SETOOLKIT.
 
-A seguir demonstratei o passo a passo usado para o desenvolvimento do desafio!
+A seguir, apresento o passo a passo realizado para o desenvolvimento do desafio:
 
 ## **1º PASSO:**
 
-Acessar o Terminal do Linux e digita o comando "sudo su".
+Acesse o terminal do Linux e digite o comando:
 
-Ao usar sudo su, você primeiro usa o sudo para obter permissão administrativa e, em seguida, executa o su para alternar para o usuário root.
-Na prática, isso significa que você se torna o usuário root sem precisar digitar diretamente a senha do root (se o seu sistema estiver configurado para usar sudo).
+sudo su
+
+Ao usar sudo su, você utiliza o sudo para obter permissões administrativas e, em seguida, executa o su para alternar para o usuário root. Na prática, isso significa que você se torna o usuário root sem precisar digitar diretamente a senha do root (desde que o sistema esteja configurado para usar o sudo).
 
 ![passo 1](https://github.com/user-attachments/assets/7943d0c0-9ae1-42ba-b77e-97763f4ff7c2)
 
@@ -20,9 +21,11 @@ ________________________________________________________________________________
 
 ## **2º PASSO:**
 
-Após logar no seu usuario, digite o comando "setoolkit".
+Após acessar o usuário root, digite o comando:
 
-O comando setoolkit é usado para iniciar o Social-Engineer Toolkit (SET), uma ferramenta poderosa e amplamente usada para testes de penetração focados em engenharia social. Ela está pré-instalada no Kali Linux e foi criada para ajudar especialistas em segurança a simular ataques de engenharia social e testar a resiliência de sistemas e pessoas contra esses tipos de ameaças.
+setoolkit
+
+O comando setoolkit inicia o Social-Engineer Toolkit (SET), uma ferramenta amplamente utilizada em testes de penetração voltados para engenharia social. Ela está pré-instalada no Kali Linux e foi projetada para ajudar especialistas em segurança a simular ataques de engenharia social e testar a resiliência de sistemas e pessoas contra esses tipos de ameaças.
 
 ![passo 2](https://github.com/user-attachments/assets/dba2f158-cb7a-41e6-b0ab-bf6ba20707b8)
 
@@ -30,9 +33,9 @@ ________________________________________________________________________________
 
 ## **3º PASSO:**
 
-Agora iremos acessar o menu de opções do SETOOLKIT.
+Acesse o menu de opções do SETOOLKIT.
 
-Nesse menu temos uma variedade de ferramentas, no entanto para esse desafio iremos usar a opção 1 "Social-Engineerring Attacks".
+Nesse menu, há uma variedade de ferramentas disponíveis. Para este desafio, utilizaremos a opção 1:
 
 ![passo 3](https://github.com/user-attachments/assets/9016afb7-5a53-4bbf-a02a-7d18c9a68c50)
 
@@ -40,9 +43,11 @@ ________________________________________________________________________________
 
 ## **4º PASSO:**
 
-Usaremos a opção 2 "Website Attack Vectors" para dar sequencia na atividade.
+Selecione a opção 2:
 
-Essa opção permite configurar ataques baseados na criação de páginas web maliciosas. Ideal para criar cenários de phishing que envolvem clonar sites ou hospedar páginas falsas para capturar credenciais de usuários.
+Website Attack Vectors
+
+Essa opção permite configurar ataques baseados na criação de páginas web maliciosas, sendo ideal para cenários de phishing que envolvem clonar sites ou hospedar páginas falsas para capturar as credenciais dos usuários.
 
 ![passo 4](https://github.com/user-attachments/assets/29027c6a-522e-4867-ba1f-57274efc13ac)
 
@@ -50,11 +55,15 @@ ________________________________________________________________________________
 
 ## **5º e 6º PASSOS:**
 
-Escolheremos agora a opção 3 "Credential Harvester Attack Method".
+Escolha a opção 3:
 
-Em seguida escolha a opção 2 "Site Cloner"
+Credential Harvester Attack Method
 
-Isso nos possibilitara a clonar um site legítimo e configura um servidor para capturar as credenciais que a vítima insere (como nome de usuário e senha).
+Em seguida, selecione a opção 2:
+
+Site Cloner
+
+Essa configuração permite clonar um site legítimo e configurar um servidor para capturar as credenciais que a vítima inserir (como nome de usuário e senha).
 
 ![passo 5](https://github.com/user-attachments/assets/ba53b109-0e5e-4280-b54f-0dd7d645883d)
 
@@ -62,13 +71,13 @@ ________________________________________________________________________________
 
 ## **7º PASSO:**
 
-Assim que concluirmos os passos anteriores, daremos inicio a clonagem. Certifuque-se que onde está com um borrão amarelo na imagem, conste o IP de sua máquina. Conferindo que está correto, apenas aperte ENTER.
+Concluídas as etapas anteriores, daremos início à clonagem. Certifique-se de que, no campo destacado em amarelo na imagem (ou saída do terminal), consta o IP da sua máquina. Caso esteja correto, pressione ENTER.
 
-Em seguida, digite a URL do site a ser clonado. No meu caso, utilizei o INSTAGRAM para a atividade, com a seguinte URL: 
+Na sequência, digite a URL do site que será clonado. No meu caso, utilizei o Instagram para esta atividade, inserindo a seguinte URL:
 
 http://www.instagram.com
 
-Pressione ENTER novamente e aguarde um resultado semelhante ao da caixa amarela da imagem abaixo:
+Pressione ENTER novamente e aguarde a conclusão do processo. O resultado será semelhante ao exemplo destacado em amarelo na imagem.
 
 ![passo 6](https://github.com/user-attachments/assets/44c6fa86-a16f-4af4-bcd8-e6978f2cfe48)
 
@@ -76,9 +85,11 @@ ________________________________________________________________________________
 
 # **PRONTO**
 
-Seu site clonado esta pronto!
+Seu site clonado está pronto!
 
-Utilize o IP da sua maquina para pesquisar no navegador e digite suas credenciais na página.
+Utilize o IP da sua máquina para acessar a página no navegador. Digite credenciais fictícias na página para realizar os testes.
+
+No terminal Linux, verifique se as credenciais inseridas aparecem conforme o esperado.
 
 ![pagina insta](https://github.com/user-attachments/assets/2496d9fd-b630-4054-832d-e32c2200e9b4)
 
@@ -94,8 +105,8 @@ ________________________________________________________________________________
 
 # Conclusão
 
-O desaafio apresentou uma certa complexidade para um iniciante na area de Cibersegurança que nem eu. No entanto, foi muito produtivo e satisfatório a execução do mesmo.
-Pude aprender um pouco mais sobre essa tecnologia, entender um pouco mais sobre as vulnerabilidades presentes no nosso cotidiano.
+O desafio apresentou um grau de complexidade para iniciantes na área de Cibersegurança, como eu. No entanto, a execução foi muito produtiva e satisfatória. Durante o processo, aprendi mais sobre essa tecnologia e entendi melhor as vulnerabilidades presentes no nosso cotidiano.
 
-Lembrando que esse desafio foi criado para fins educativos, reproduzido em um ambiente controlado.
+Lembrando: Este desafio foi realizado para fins educativos e reproduzido em um ambiente controlado.
+
 
